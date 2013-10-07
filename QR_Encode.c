@@ -743,7 +743,7 @@ int GetBitLength(BYTE nMode, int ncData, int nVerGroup)
 int EncodeSourceData(LPCSTR lpsSource, int ncLength, int nVerGroup,int m_nBlockLength[MAX_DATACODEWORD],BYTE m_byBlockMode[MAX_DATACODEWORD],BYTE m_byDataCodeWord[MAX_DATACODEWORD])
 {
 
-	ZeroMemory(m_nBlockLength, sizeof(m_nBlockLength));
+	ZeroMemory(m_nBlockLength, MAX_DATACODEWORD * sizeof(m_nBlockLength[0]));
 
 	int i, j;
 
@@ -1693,7 +1693,7 @@ void FormatModule(BYTE m_byModuleData[177][177],BYTE m_byAllCodeWord[MAX_ALLCODE
 {
 	int i, j;
 
-	ZeroMemory(m_byModuleData, sizeof(m_byModuleData));
+	ZeroMemory(m_byModuleData, 177 * 177 * sizeof(m_byModuleData[0][0]));
 
 
 	//Function module placement
