@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 
 
   // This code dumps the QR code to the screen as ASCII.
-  wprintf(L"QR Code width: %u\n",QR_width);
+  wprintf(L"QR Code width: %d\n",QR_width);
   
   int bit_count=0;
   wprintf(L"%i",size);
