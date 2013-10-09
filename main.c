@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
   int QR_width=EncodeData(3,version,argv[1],0,QR_m_data);
 
   // Write the data to the output file
-  FILE *f=fopen(argv[2],"w");
+  FILE *f=fopen(argv[2],"wb");
   int size=((QR_width*QR_width)/8)+(((QR_width*QR_width)%8)?1:0);
   wprintf(L"\nwriting file %i bytes size \n",size);
   fwrite(QR_m_data,size,1,f);
