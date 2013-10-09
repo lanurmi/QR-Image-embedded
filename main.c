@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <wchar.h>
 #include <locale.h>
+#include <stdlib.h>
 
 int main(int argc, char *argv[])
 {

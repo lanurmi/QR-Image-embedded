@@ -5,10 +5,6 @@
  *      Author: swex
  */
 
-#include <string.h>
-#include <stdlib.h>
-
-
 // Constant
 
 // Error correction level
@@ -81,7 +77,6 @@ typedef BYTE* LPBYTE;
 
 typedef const char* LPCSTR;
 
-#define ZeroMemory(Destination,Length) memset((Destination),0,(Length))
 int EncodeData(int nLevel, int nVersion , LPCSTR lpsSource, int sourcelen,unsigned char QR_m_data[]);
 
 /*nLevel - уровень коррекции ошибок

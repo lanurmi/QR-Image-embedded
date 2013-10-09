@@ -1,6 +1,10 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
 #include "QR_Encode.h"
 
+#define ZeroMemory(Destination,Length) memset((Destination),0,(Length))
 
 int m_nLevel;
 int QR_m_nVersion;
